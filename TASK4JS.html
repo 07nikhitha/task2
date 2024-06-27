@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+            var date=new Date();
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            var dd=date.getDate();
+            var mm =month[date.getMonth()];
+            var yyyy=date.getFullYear();
+           var today=dd+"/"+mm+"/"+yyyy;
+          
+               
+           </script>
+<button type="button"
+onclick="document.getElementById('datebutton').textContent =today">
+Show Time</button>
+
+<p id="datebutton"></p>
+<br>
+<br>
+<button type="button"
+onclick="document.getElementById('timebutton').innerHTML = Date()">
+Show Time</button>
+
+<p id="timebutton"></p>
+       
+     
+       
+
+    </body>
+    </html>

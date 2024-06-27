@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+
+function alphabet(str) {
+
+  var arr = str.split("");
+
+  r = arr.sort().join("");
+
+  w = r.replace(/\s+/g, "");
+
+  return w;
+
+}
+
+const str="webmaster";
+document.write("Example string is:"+str);
+document.write("<br>")
+document.write("ordered string is:"+alphabet(str));
+</script>
+        </body>
+        </html>

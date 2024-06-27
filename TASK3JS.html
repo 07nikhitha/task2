@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <style>
+              body{
+                border:5px solid;
+                padding:5px 4px 3px 6px;
+              }
+        </style>
+    </head>
+    <body>
+        <script>
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+</script>
+<form>
+1st Number:<input type="text" id="firstNumber" style="margin-bottom:10px;"/><br>
+2nd Number:<input type="text" id="secondNumber" for="num1" style="margin-bottom:30px;"/><br>
+<input type="button" onClick=" multiplyBy()" Value="Multiply"/>
+<input type="button" onclick="divideBy()" Value="divide"/>
+</form>
+<p>The result is: <br>
+<span id="result"></span>
+</p>
+
+</body>
+</html>

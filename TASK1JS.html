@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    </head>
+    <body>
+       
+        <script>
+            function reversenumber(n, r = 0) {
+
+if (n === 0) {
+
+    return r;
+
+}
+
+return reversenumber(Math.floor(n / 10),
+
+    r * 10 + n % 10);
+
+
+            }
+const n=12345
+document.write("given number is:"+n);
+document.write("<br>");
+document.write("rev number is:"+reversenumber(n));
+
+
+
+        </script>
+      
+       </p>
+    </body>
+</html>
